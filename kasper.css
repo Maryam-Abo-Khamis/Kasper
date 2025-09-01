@@ -1,0 +1,832 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#home {
+    width: 100%;
+    height:102vh;
+    margin-bottom: 150px;
+    background-image: url(images/landing.jpg);
+    padding: 15px 0;
+    position: relative;
+    background-size: cover;
+    background-color: #1f2021;
+    filter:brightness(0.8) ;
+    
+}
+#home .overley {
+    width: 100%;
+    height: 100%;
+    left:0;
+    top: 0;
+    background-color: #00000069;
+    position: absolute;
+}
+#home nav {
+    width: 100%;
+    height: fit-content;
+    padding:0 10%;
+}
+#home .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+}
+#home .container img  {
+    width: 100px;
+
+}
+#home .container .list  {
+    display: none;
+    width: 40px;
+    padding: 10px;
+}
+#home .container .list div {
+    width: 20px;
+    height: 4px;
+    background-color: #fff;
+    margin-bottom: 4px;
+}
+#home .container .info  ul li a{
+    text-decoration:none ;
+    color: #fff;
+    padding-bottom:17px;
+
+}
+#home .container .info ul li a:hover {
+    color: #19c8fa;
+    border-bottom: 2px solid #19c8fa;
+}
+#home .container .info  ul li {
+    margin-right: 15px;
+    display: inline-block;
+}
+#home .container .info  ul {
+    display: inline;
+    padding: 0 10px;
+}
+#home .container ul + div{
+    border-left: 2px solid #fff ; 
+    display: inline;      
+    padding: 5px; 
+}   
+#home  div.text {
+    width: 50%;
+    height: fit-content;
+    margin: 120px 0 170px  0;
+    padding: 40px ;
+    padding-left: 150px;
+    color: #fff;
+    background-color: #19c8fa87;
+}
+#home .text h2 {
+    font-size: 2em;
+    margin: 20px 0 20px 20px;
+
+} 
+#home .text p {
+    line-height: 22px;
+    margin: 0px 0 40px 20px;
+
+}
+ .circle {
+    text-align: center;
+    margin-bottom: 20px;
+}
+ .circle div {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-right: 7px;
+    display: inline-block;
+}
+.circle div:nth-child(2) {
+    background-color: #19c8fa;
+    border: transparent;
+}
+#home::after,
+#home::before{
+    content: "";
+    width: 7px;
+    height: 7px;
+    border: 4px solid #fff;
+    position: absolute;
+    top:50%;
+    transform: rotate(-45deg);
+    z-index: 4;
+}
+#home::after{
+    border-top-color:transparent ;
+    border-left-color: transparent;
+    right:27px;
+
+}
+#home::before{
+    border-bottom-color:transparent ;
+    border-right-color: transparent;
+    left:27px;
+
+}
+.services {
+    width: 100%;
+    height: 100vh;
+    padding: 40px 20px;
+    margin-bottom:30px ;
+
+}
+header h1 {
+    font-weight: 200;
+    text-transform: uppercase;
+    margin: 15px;
+    text-align: center;
+    font-size: 2.5em;
+
+}
+.line{
+    width: 100px;
+    border-bottom: 2px solid;
+    position: relative;
+    display: block;
+    margin: 25px;
+    margin-left: calc(50% - 50px);
+}
+.line div {
+    width: 15px;
+    height: 15px ;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid;
+    position: absolute;
+    margin-left: 50%;
+    left:-7.5px;
+    bottom:-8.5px;
+}
+p.text {
+    color: #474849a1;
+    text-align: center;
+    width: 45%;
+    display: block;
+    margin: 30px 27.5%;
+}
+div.element {
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+div.element h2{
+    font-weight: 300;
+    color: #19c8fa;
+    padding: 15px;
+}
+div.element .text{
+    text-align: left;
+    margin: 0;
+    width: 80%;
+    margin-left: 20px;
+}
+div.element div {
+    width: calc((100% - 160px) / 2);
+    display:inline;
+    margin: 30px 0 30px 80px;
+    position: relative;
+}
+div.element i {
+    position: absolute;
+    top: 35px;
+    left: -45px;
+    background: transparent;
+    color: black;
+    transform: scale(2.5);
+}
+
+
+.feature {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    background-image: url("images/design-features.jpg");
+    background-color: #1f2021;
+    background-size: cover;
+    margin: 40px 0;
+    overflow: hidden;
+}
+.feature .filter{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #1f202185;
+    justify-content: space-evenly;
+    align-items: flex-end;
+
+}
+.feature .filter .image img {
+    width: 338px;
+    mix-blend-mode: exclusion;
+ 
+}
+.feature .filter .image{
+   transform: translateY(62px);
+}
+.feature .filter .list {
+    background-color: #0f748fb3;
+    width: 47%;
+    height: 326px;
+    padding: 30px;
+    color: #fff;
+    align-self: center;
+    margin-right: -18%;
+}
+.feature .filter .list header  {
+    font-size: 1.5em;
+    margin-bottom: 36px;
+
+}
+.feature .filter .list ul li {
+    font-size: 1.2em;
+    margin: 19px;
+    list-style :none;
+}
+.feature .filter .list ul {
+    margin-left: -25px;
+}
+.feature .filter .list ul li::before {
+    content: "🖥️";
+    margin: 10px;
+}
+.portfolio {
+    height: 120vh;
+    width: 100%;
+    margin-bottom: 80px;
+
+}
+.portfolio ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+    padding: 10px 5px;
+}
+.portfolio ul li:nth-child(1) {
+    background-color: #19c8fa;
+    color: #fff;
+  
+}
+.portfolio ul{
+    margin: 70px 20px;
+    text-align: center;
+}
+.imgport {
+    max-height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px 0;
+
+}
+.imgport >div{
+    width: 25%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+}
+.imgport div div{
+    width: 100%;
+    height: 246px;
+    background-size: cover;
+    position: relative;
+    display: inline-block;
+    background-color: black;
+    transition: .5s 0s ease;
+
+}
+.imgport>div:nth-child(1) div:nth-child(1){
+    background-image: url(images/shuffle-01.jpg);
+    border-bottom: 4px solid #fff;
+}
+.imgport>div:nth-child(2) div:nth-child(1){
+    background-image: url(images/shuffle-02.jpg);
+    border-bottom: 4px solid #fff;
+
+}
+.imgport >div:nth-child(3) div:nth-child(1){
+    background-image: url(images/shuffle-03.jpg);
+    border-bottom: 4px solid #fff;
+
+}
+.imgport >div:nth-child(4) div:nth-child(1){
+    background-image: url(images/shuffle-04.jpg);
+    border-bottom: 4px solid #fff;
+
+}
+.imgport >div:nth-child(5) div:nth-child(1){
+    background-image: url(images/shuffle-05.jpg);
+}
+.imgport> div:nth-child(6) div:nth-child(1){
+    background-image: url(images/shuffle-06.jpg);
+}
+.imgport >div:nth-child(7) div:nth-child(1){
+    background-image: url(images/shuffle-07.jpg);
+}
+.imgport >div:nth-child(8) div:nth-child(1){
+    background-image: url(images/shuffle-08.jpg);
+}
+.imgport div p {
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    padding: 12px 44px;
+    background-color: #fff;
+    display: none;
+    line-height: 25px;
+}
+.imgport div p span {
+    color: #66b6f4;
+}
+.imgport div:hover  p{
+    display:block;
+}
+.imgport >div:hover div {
+    transform: rotate(4deg) scale(1.2);
+}
+.btn{
+    text-align: center;
+    margin: 40px 0;
+  
+}
+.btn a{
+    text-decoration:none ;
+    color: #fff;
+    background-color: #19c8fa;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+.fa-magnifying-glass {
+    color: #fff;
+}
+.video {
+    overflow: hidden;
+    margin: 100px 0;
+    height: 100vh;
+}
+video {
+    width: 100%;
+    opacity: 0.5;
+}
+
+.filter{
+    width: 100%;
+    background-color:#272525;
+}
+.video .explain{
+     width: 100%;
+    height: 300px;
+    background-color: rgb(15 116 143 / 70%);
+    padding: 30px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    margin-top: calc(-50% + 150px);
+    line-height: 66px;
+}
+
+.video .explain header,
+.video .explain button {
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-size: 1.5em;
+
+}
+.video .explain button {
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2em;
+}
+.about{
+    margin: 70px 0;
+    
+}
+.about .img {
+    text-align: center;
+    margin: 100px 100px -120px 100px;
+}
+ .about .stats { 
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    max-height: 500px;
+    position: relative;
+    background-color: #343a3cb3;
+
+}
+.stats::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(0 0 0 / 70%);
+}
+.about .inf{
+    width: 80%;
+    display: flex;
+    margin-top: -19%;
+    background-color: rgb(15 116 143 / 70%);
+    position: relative;
+    z-index: inherit;
+    height: 175px;
+    padding: 40px;
+    margin-left: 10%;
+    color: #fff;
+}
+.about .inf div{
+    width: 25%;
+    text-align: center;
+    
+}
+i{
+    background-color: black;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+
+}
+.fa-solid {
+    color: #fff;
+}
+.inf p span {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+
+.skills >div.inf {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding:100px ;
+}
+.skills >.inf >div {
+    width: 45%;
+} 
+.skills header h3 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin: 15px
+}
+.skills header + div {
+    width: 100%;
+    height: 95px;
+    text-align: center;
+    padding: 20px;
+}
+.skills p.text {
+   width: 90%;
+   margin: 0;
+
+}
+.one >div.inf{
+    display: flex;
+    margin-top: 30px;
+    position: relative;
+}
+.one div.inf .img {
+    width: 65%;
+    overflow: hidden;
+}
+.one div.inf img {
+    width: 100px;
+    border-radius: 50%;
+}
+.one > .inf::after {
+    content: "John Doe, CEO";
+    color: #777;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.one hr {
+    width: 70%;
+    margin: 16px 0;
+    margin-left: 30%;
+    color: #77777782;
+}
+.one .circle div {
+    border-color: #777777b8;
+    margin-top: 45px;
+}
+.skills .two ul li{
+    list-style: none;
+    padding: 15px 0;
+    position: relative;
+    text-transform: uppercase;
+}
+.skills .two hr {
+    margin: 10px 0;
+    height: 35px;
+    background-color: #dedadc;
+    border: none;
+}
+.skills .two hr.one {
+    background-image: linear-gradient(90deg, #19c8fa 90%, #dedadc 90%);
+}
+.skills .two hr.three {
+    background-image: linear-gradient(90deg, #19c8fa 80%, #dedadc 80%);
+}
+.skills .two hr.two {
+    background-image: linear-gradient(90deg, #19c8fa 85%, #dedadc 85%);
+}
+.skills li::after{
+    content: "90%";
+    width: 34px;
+    height: 24px;
+    border-radius: 4px;
+    background-color: #000;
+    position: absolute;
+    top: 20px;
+    color: #fff;
+    padding: 3px 2px;
+    right: 30px;
+}
+.skills li:nth-child(5)::after{
+    content: "80%";
+    right: 77px;
+}
+.skills li:nth-child(5)::before{
+    right: 87px;
+}
+.skills li:nth-child(3)::after{
+    content: "85%";
+    right: 57px;
+}
+.skills li:nth-child(3)::before{
+    right: 67px;
+}
+.skills li::before{
+    content: "";
+    position: absolute;
+    border: 8px solid;
+    top: 38px;
+    right: 40px;
+    transform: rotate(45deg);
+}
+.skills>.img {
+    margin: 100px 0;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    position: relative;
+}
+.skills>.img::before,
+.pricing .subscribe::before,
+.contact .footer::before{ 
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 75%);
+    position: absolute;
+    top:0;
+}
+.skills>.img img{
+    width: 100%;
+}
+
+.skills .quote {
+    font-size: 1.7em;
+    margin: 0 70px;
+    margin-top: -255px;
+    color: azure;
+    position: absolute;
+}
+.skills .quote span {
+    font-size: .6em;
+    margin: 0 45%;
+}
+.pricing >div>.information {
+    display: flex;
+    margin: 100px 80px 20px 100px;
+}
+.pricing div> .information > div {
+    width: calc((100% - 60px)/4);
+    padding: 35px 30px;
+    border-top: 1px solid #19c8fa;
+    margin-right:20px ;
+}
+.pricing div> .information  >div div {
+    border-bottom: 1px solid #19cafa;
+    padding: 20px 0;
+    text-align: center;
+}
+.pricing div> .information >div div:last-of-type {
+    border: none;
+}
+.pricing p.add {
+    font-size: 1.7em;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.pricing span.num {
+    font-size: 4em;
+    font-weight: bold;
+    position: relative;
+}
+.pricing span.num::before {
+    content: "$";
+    position: absolute;
+    top: 0px;
+    left: -25px;
+    font-size: 35px;
+    font-weight: 200;
+}
+.pricing sub {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.pricing .ex >div {
+    width: 93%;
+    margin-left: 3.5%;
+
+}
+.pricing button {
+    background: transparent;
+    padding: 12px 15px;
+    border-color: #19cafa;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    margin: 15px 0;
+    border-width: 1px;
+}
+.pricing button a{
+    text-decoration: none;
+}
+.pricing .ex{
+    text-align: center;
+    font-size: 1.3em;
+}
+.pricing .ex button {
+    font-size: 1em;
+    background-color: #19cafa;
+
+}
+.pricing .ex button a {
+    color: #fff;
+}
+.pricing >div:nth-child(1){
+    margin-bottom: 100px;
+}
+.pricing .subscribe,
+.contact .footer {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+.pricing .subscribe img {
+    width: 100%;
+}
+.pricing .subscribe::before{
+    background-color: #1f2021ad;
+
+}
+.pricing .subscribe + .container {
+    display: flex;
+    margin-top: -14%;
+    position: absolute;
+    color: #fff;
+    justify-content: center;
+    width: 100%;
+
+}
+.pricing .subscribe + .container >div:nth-child(1){
+    width:   365px;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pricing .subscribe + .container input[type="email"] {
+    padding: 15px 26px;
+    border: none;
+    background: transparent;
+}
+.pricing .subscribe + .container input[type="submit"] ,
+.contact input[type="submit"]{
+    background-color: #19c8fa;
+    color: #fff;
+    padding: 14px 16px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border: none;
+}
+.pricing .subscribe +.container  div:nth-child(2){
+    width: 50%;
+    margin-left: 45px;
+}
+.pricing ::placeholder{
+    color: #fff;
+    font-size: 1.2em;
+
+}
+.pricing i {
+    position: absolute;
+    margin-top: -13.3%;
+    margin-left: 168px;
+    background-color: transparent;
+    color: #fff;
+    transform: scale(.83);
+}
+.pricing {
+    margin-bottom: 150px;
+}
+.contact >.contianer {
+    display: flex;
+    flex-flow: row-reverse;
+    margin: 100px 50px;
+    justify-content: space-evenly;
+
+}
+.contact >.contianer >div:nth-child(2)  {
+    width: 70%;
+}
+.contact input:not(input[type="submit"]) ,
+.contact textarea{
+    padding: 15px;
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom: 25px;
+}
+.contact ::placeholder {
+    font-size: 1.3em;
+}
+.contact textarea{
+    height: 250px;
+
+}
+.contact input[type="submit"]{
+    margin-left: 77.5%;
+}
+.contact header h3 {
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+.contact .inf{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+}
+.contact .inf div{
+   width: 100%;
+   line-height: 20px;
+}
+.contact .inf  p{
+    color: #474849a1;
+    line-height: 30px;
+}
+.contact .footer{
+    height: 400px;
+}
+.contact .footer +div {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin-top: -26%;
+    color: #fff;
+    line-height: 80px;
+}
+.contact .footer  >img{
+    width: 100%;
+}
+.contact .footer + div h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+ 
+}
+.contact hr {
+    width: 16%;
+    margin-left: 42%;
+}
+.contact i {
+    margin-right: 12px;
+    background-color: transparent;
+}
+.progress{
+    background-color: rgb(69, 106, 242);
+    width: 1px;
+    height: 13px;
+    margin-top: 6px;
+    margin-left: 2px;
+    position: sticky;
+    top: 0;
+    z-index: 222;
+}
