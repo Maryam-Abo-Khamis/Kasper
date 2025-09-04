@@ -6,9 +6,9 @@ function checkOutProgress(){
 // //8384
 let div=document.querySelector('.progress')
 
-let endpages=8384,scroll=0;
+let endpages=7790,scroll=0;
 function changeWidth(scroll){
-    let value=Math.floor((scroll*100)/endpages);
+    let value=Math.ceil((scroll*100)/endpages);
     div.style.width=value+"%"
 }
 let t=setInterval(()=>{
